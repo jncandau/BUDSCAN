@@ -1,0 +1,14 @@
+# R artifacts
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# HPC outputs
+*.o
+*.e
+*.out
+logs/
+
+# Results
+Results/
