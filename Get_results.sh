@@ -3,13 +3,13 @@
 #SBATCH --time=01:00:00
 #SBATCH --mem=16G
 #SBATCH --cpus-per-task=1
-#SBATCH --array=1-3
+#SBATCH --array=1
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jean.noel.candau@gmail.com
  
 module load cdo
  
-YEAR=$((SLURM_ARRAY_TASK_ID + 2015))
+YEAR=$((SLURM_ARRAY_TASK_ID + 2018))
 
 cd /home/jcandau/scratch/BUDSCAN/Outputs/XAM_${YEAR}
 
